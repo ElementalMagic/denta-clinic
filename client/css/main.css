@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap');
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.logo + span {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #213356;
+}
+.logo {
+    vertical-align: bottom;
+    margin-right: 8px;
+}
+.menu {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+}
+.menu-item + .menu-item {
+    margin-left: 32px;
+}
+.menu-item {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #67718A;
+}
+nav.section {
+    padding-top: 46px;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-text {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+    color: #213356;
+    white-space: pre-line;
+    padding-top: 46px;
+}
+
+.hero {
+
+}
+
+.hero-subtext {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    color: #67718A;
+    white-space: pre-line;
+}
+
+
+.hero-button {
+    margin-top: 45px;
+    background: #21CD87;
+    border-radius: 4px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: white;
+    width: 234px;
+    height: 54px;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.section-header {
+}
+
+.section-header-text {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 130%;
+
+    color: #213356;
+}
+
+.section-header-subtext {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #67718A;
+    white-space: pre-line;
+}
+
+.section-body {
+    padding-top: 76px;
+}
+
+.dot{
+    background: rgba(33, 205, 135, 0.4);
+    border-radius: 8px;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.product-card-header {
+    margin-bottom: 32px;
+    display: inline-flex;
+}
+
+.product-card {
+    background: #FFFFFF;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    padding: 24px 85px 30px 32px;
+    position: relative;
+}
+
+.product-card-header-title {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 130%;
+    color: #213356;
+    margin-left: 16px;
+}
+
+.product-card .table-header {
+    margin-bottom: 24px;
+}
+
+.product-card .table-header-text {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    color: #213356;
+    text-align: right;
+}
+
+.product-card .table-header-text span {
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.product-card-body .item-footer{
+    margin-top: 32px
+}
+.product-card-body .item-footer .price {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: right;
+    color: #213356;
+}
+
+.product-card-body .item-footer .total {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    color: #213356;
+}
+
+.product-card-body .item {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #67718A;
+    margin-bottom: 0px;
+}
+
+.product-card-body .item .column {
+    padding: 4px 12px 4px 12px;
+}
+
+.product-card-body .item .price {
+    text-align: right;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #213356;
+}
+
+.product-card-body .item + .item {
+    margin-top: 0px;
+}
+@media (min-width: 1408px){
+    .container {
+        max-width: 1176px;
+    }
+}
+
+.rectangle {
+    background: rgba(33, 205, 135, 0.4);
+    border-radius: 8px;
+    transform: rotate(-35.27deg);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 9px;
+    top: -35px;
+    z-index: -1;
+}
+
+.s-row {
+    margin-top: 61px;
+}
+
+.full-spectre .column .name {
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+
+    color: #67718A;
+}
+
+.full-spectre .column .price {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+
+    color: #213356;
+}
+
+.full-spectre .columns > .column > .columns > .column  {
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
