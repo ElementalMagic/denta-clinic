@@ -17,18 +17,22 @@
 
     color: #213356;
 }
+
 .logo {
     vertical-align: bottom;
     margin-right: 8px;
 }
+
 .menu {
     margin-left: 80px;
     display: flex;
     align-items: center;
 }
+
 .menu-item + .menu-item {
     margin-left: 32px;
 }
+
 .menu-item {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -37,9 +41,11 @@
     line-height: 19px;
     color: #67718A;
 }
+
 nav.section {
     padding-top: 46px;
 }
+
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -69,7 +75,6 @@ nav.section {
     color: #67718A;
     white-space: pre-line;
 }
-
 
 .hero-button {
     margin-top: 45px;
@@ -117,7 +122,7 @@ nav.section {
     padding-top: 76px;
 }
 
-.dot{
+.dot {
     background: rgba(33, 205, 135, 0.4);
     border-radius: 8px;
     width: 20px;
@@ -165,9 +170,10 @@ nav.section {
     border-bottom: 1px solid #E7E7E7;
 }
 
-.product-card-body .item-footer{
+.product-card-body .item-footer {
     margin-top: 32px
 }
+
 .product-card-body .item-footer .price {
     font-family: Rubik;
     font-style: normal;
@@ -214,7 +220,8 @@ nav.section {
 .product-card-body .item + .item {
     margin-top: 0px;
 }
-@media (min-width: 1408px){
+
+@media (min-width: 1408px) {
     .container {
         max-width: 1176px;
     }
@@ -257,7 +264,131 @@ nav.section {
     color: #213356;
 }
 
-.full-spectre .columns > .column > .columns > .column  {
+.full-spectre .columns > .column > .columns > .column {
     padding-bottom: 8px;
     padding-top: 8px;
+}
+
+.contacts {
+    padding: 32px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+}
+
+.contacts-item + .contacts-item {
+    padding-top: 40px;
+}
+
+.contacts-item-name {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+
+    color: #67718A;
+    padding-bottom: 8px;
+}
+
+.contacts-item-value {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    color: #213356;
+}
+
+.contacts-subtext {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+
+    color: #67718A;
+}
+
+.contacts-side-text-big {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    color: #213356;
+}
+
+.contacts-side-text-small {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #67718A;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacts-side-text-small .dot {
+    background: #21CD87;
+    border-radius: 8px;
+    width: 20px;
+    height: 20px;
+    margin: 0 18px 0 0;
+}
+
+.footer {
+    background: #F9FAFE;
+    padding: 55px 24px 33px 24px;
+}
+
+.footer-link {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #213356;
+}
+.footer-link + .footer-link {
+    padding-top: 24px;
+}
+.footer-contact + .footer-contact {
+    padding-top: 40px;
+}
+.footer-contact-name {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #67718A;
+    padding-bottom: 8px;
+}
+.footer-contact-value{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #213356;
+}
+.footer-company-name {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #213356;
+    padding-bottom: 8px;
+}
+.credits {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #67718A;
 }
