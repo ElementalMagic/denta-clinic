@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap');
 
 .pb-100 {
-    padding-bottom: 100px;
+    padding-bottom: 160px;
 }
 
+@media (max-width: 1024px) {
+    .pb-100 {
+        padding-bottom: 100px;
+    }
+    
+}
 .pt-0 {
     padding-top: 0;
 }
@@ -23,17 +29,12 @@
     margin-right: 8px;
 }
 
-.menu {
-    margin-left: 80px;
-    display: flex;
-    align-items: center;
-}
 
-.menu-item + .menu-item {
-    margin-left: 32px;
+nav.navbar {
+    padding-top: 46px;
+    z-index: 0;
 }
-
-.menu-item {
+a.navbar-item {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -42,10 +43,16 @@
     color: #67718A;
 }
 
-nav.section {
-    padding-top: 46px;
+.navbar-brand {
+    margin-right: 80px;
+    align-items: center;
 }
 
+@media (max-width: 1024px) {
+    .navbar-brand {
+        margin-right: 24px;
+    }
+}
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -62,8 +69,32 @@ nav.section {
     padding-top: 46px;
 }
 
-.hero {
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 32px;
+        line-height: 48px;
+        padding-top: 24px;
+    }
+    
+}
 
+.hero-image {
+    position: absolute; 
+    top: 0;
+    right: 0; 
+    overflow: visible
+}
+
+@media (max-width: 1356px) {
+    .hero-image {
+        max-height: 600px;
+    }
+}
+
+@media (max-width: 1215px) {
+    .hero-image {
+        display: none;
+    }
 }
 
 .hero-subtext {
@@ -74,6 +105,12 @@ nav.section {
     line-height: 140%;
     color: #67718A;
     white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+    .hero-subtext {
+        font-size: 16px;
+    }
 }
 
 .hero-button {
@@ -140,6 +177,12 @@ nav.section {
     box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
     padding: 24px 85px 30px 32px;
     position: relative;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        padding: 24px 32px 30px 32px;
+    }
 }
 
 .product-card-header-title {
