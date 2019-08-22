@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="css/bulma.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<nav class="section">
+<nav class="navbar" id="main">
     <div class="container">
-        <div class="nav-bar">
-            <div class="">
+        <div class="navbar-brand">
+            <a href="" class="navbar-item">
                 <img src="img/logo.png" alt="" class="logo">
                 <span>ДЕНТА</span>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" id="burger"
+               data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="menu">
+            <div class="navbar-start">
+                <a href="#main" class="navbar-item">Главная</a>
+                <a href="#solutions" class="navbar-item">Готовые решения</a>
+                <a href="#services" class="navbar-item">Услуги</a>
+                <a href="#contacts" class="navbar-item">Контакты</a>
             </div>
-            <div class="menu">
-                <span class="menu-item">Главная</span>
-                <span class="menu-item">Готовые решения</span>
-                <span class="menu-item">Услуги</span>
-                <span class="menu-item">Контакты</span>
-            </div>
-
         </div>
     </div>
 </nav>
-<section class="section pb-100" style="padding-bottom: 226px;">
+<section class="section pb-100">
     <div class="container">
         <div class="hero">
             <h1 class="hero-text">Протезирование зубов.
@@ -36,7 +44,7 @@
                 Наш многолетний опыт поможет Вам
                 даже в самой сложной ситуации.
             </h2>
-            <a href="#" class="hero-button is-flex">
+            <a href="#contacts" class="hero-button is-flex">
                 <div class="m-auto">
                     Запишитесь на прием
                 </div>
@@ -45,8 +53,8 @@
 
     </div>
 </section>
-<img src="img/Intersect.png" alt="" style="position: absolute; top: 0; right: 0; z-index: -1;">
-<section class="section prod-ready pb-100 pt-0">
+<img class="hero-image" src="img/Intersect.png" alt="" class="is-hidden-touch">
+<section class="section prod-ready pb-100 pt-0" id="solutions">
     <div class="container">
         <div class="section-header">
             <div class="section-header-text">
@@ -59,7 +67,7 @@
         </div>
         <div class="section-body">
             <div class="columns">
-                <div class="column">
+                <div class="column mb-md-5">
                     <div class="product-card">
                         <div class="rectangle"></div>
                         <div class="product-card-header">
@@ -144,7 +152,7 @@
                 </div>
             </div>
             <div class="columns s-row">
-                <div class="column">
+                <div class="column mb-md-5">
                     <div class="product-card">
                         <div class="rectangle" style="background: #21CD87;"></div>
                         <div class="product-card-header">
@@ -231,7 +239,7 @@
         </div>
     </div>
 </section>
-<section class="section pb-100 pt-0 full-spectre">
+<section class="section pb-100 pt-0 full-spectre" id="services">
     <div class="container">
         <div class="section-header">
             <div class="section-header-text">
@@ -246,86 +254,74 @@
             <div class="columns">
                 <div class="column">
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Коронка стальная</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка стальная</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Коронка восстановительная</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка восстановительная
+                        </div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Литой зуб</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Литой зуб</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Фасетка</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Фасетка</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Коронка с облицовкой</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка с облицовкой</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Коронка пластмассовая</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка пластмассовая</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Бюгельная коронка</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Бюгельная коронка</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Литой штифт</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Литой штифт</div>
                         <div class="column price is-3">200Р</div>
                     </div>
 
                 </div>
                 <div class="column">
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Коронка стальная</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка стальная</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Коронка восстановительная</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка восстановительная
+                        </div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Литой зуб</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Литой зуб</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Фасетка</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Фасетка</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Коронка с облицовкой</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile is-offset-2-tablet">Коронка с
+                            облицовкой
+                        </div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Коронка пластмассовая</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка пластмассовая</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Бюгельная коронка</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Бюгельная коронка</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column is-2"></div>
-                        <div class="column name is-7">Литой штифт</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Литой штифт</div>
                         <div class="column price is-3">200Р</div>
                     </div>
 
@@ -334,7 +330,7 @@
         </div>
     </div>
 </section>
-<section class="section pb-100 pt-0 full-spectre">
+<section class="section pb-100 pt-0 full-spectre" id="contacts">
     <div class="container">
         <div class="columns">
             <div class="column is-flex" style="flex-direction: column">
@@ -395,7 +391,7 @@
 <footer class="footer">
     <div class="container">
         <div class="columns">
-            <div class="column">
+            <div class="column is-one-third">
                 <div class="d-flex" style="flex-direction: column">
                     <div style="padding-bottom: 32px">
                         <img src="img/logo.png" alt="" class="logo">
@@ -412,17 +408,15 @@
                     </div>
                 </div>
             </div>
-            <div class="column"></div>
-            <div class="column">
+            <div class="column is-one-third">
                 <div class="is-flex" style="flex-direction: column">
-                    <div class="footer-link">Главная</div>
-                    <div class="footer-link">Готовые решения</div>
-                    <div class="footer-link">Услуги</div>
-                    <div class="footer-link">Контакты</div>
+                    <a href="#main" class="footer-link">Главная</a>
+                    <a href="#solutions" class="footer-link">Готовые решения</a>
+                    <a href="#services" class="footer-link">Услуги</a>
+                    <a href="#contacts" class="footer-link">Контакты</a>
                 </div>
             </div>
-            <div class="column"></div>
-            <div class="column">
+            <div class="column is-one-third">
                 <div class="is-flex" style="flex-direction: column;">
                     <div class="footer-contact">
                         <div class="footer-contact-name">Телефон</div>
@@ -439,5 +433,32 @@
         </div>
     </div>
 </footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('a').on('click', function (event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top
+                    },
+                    768
+                );
+            }
+        })
+        $('#burger').on('click',function (event) {
+            let menu = $('#menu')[0];
+            if(menu.classList.contains('is-active')){
+                menu.classList.remove('is-active')
+                event.target.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+                event.target.classList.add('is-active');
+            }
+        })
+    });
+</script>
 </body>
 </html>
