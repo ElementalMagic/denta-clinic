@@ -4,31 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello Bulma!</title>
+    <title>Медицинский центр «Дента»</title>
+    <meta name="title" content="Медицинский центр «Дента». Протезирование зубов. Недорого.">
+    <meta name="description" content="Медицинский центр «Дента» поможет вернуть Вам Вашу улыбку. Более 25 лет мы помогаем людям даже в самых сложных ситуациях.">
     <link rel="stylesheet" href="css/bulma.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="css/main.css">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<nav class="navbar">
+<nav class="navbar" id="main">
     <div class="container">
         <div class="navbar-brand">
             <a href="" class="navbar-item">
                 <img src="img/logo.png" alt="" class="logo">
                 <span>ДЕНТА</span>
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" id="burger"
+               data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        <div class="navbar-menu">
+        <div class="navbar-menu" id="menu">
             <div class="navbar-start">
-                <a href="" class="navbar-item">Главная</a>
-                <a href="" class="navbar-item">Готовые решения</a>
-                <a href="" class="navbar-item">Услуги</a>
-                <a href="" class="navbar-item">Контакты</a>
+                <a href="#main" class="navbar-item">Главная</a>
+                <a href="#solutions" class="navbar-item">Готовые решения</a>
+                <a href="#services" class="navbar-item">Услуги</a>
+                <a href="#contacts" class="navbar-item">Контакты</a>
             </div>
         </div>
     </div>
@@ -43,7 +65,7 @@
                 Наш многолетний опыт поможет Вам
                 даже в самой сложной ситуации.
             </h2>
-            <a href="#" class="hero-button is-flex">
+            <a href="#contacts" class="hero-button is-flex">
                 <div class="m-auto">
                     Запишитесь на прием
                 </div>
@@ -53,7 +75,7 @@
     </div>
 </section>
 <img class="hero-image" src="img/Intersect.png" alt="" class="is-hidden-touch">
-<section class="section prod-ready pb-100 pt-0">
+<section class="section prod-ready pb-100 pt-0" id="solutions">
     <div class="container">
         <div class="section-header">
             <div class="section-header-text">
@@ -66,7 +88,7 @@
         </div>
         <div class="section-body">
             <div class="columns">
-                <div class="column">
+                <div class="column mb-md-5">
                     <div class="product-card">
                         <div class="rectangle"></div>
                         <div class="product-card-header">
@@ -82,7 +104,7 @@
                             <div class="columns item is-mobile">
                                 <div class="column">Осмотр</div>
                                 <div class="column price">100Р</div>
-                                <div class="column price">4 000Р</div>
+                                <div class="column price">100Р</div>
                             </div>
                             <div class="columns item is-mobile">
                                 <div class="column">Протез</div>
@@ -99,6 +121,8 @@
                                 <div class="column price">200Р</div>
                                 <div class="column price">200Р</div>
                             </div>
+                        </div>
+                        <div class="product-card-price">
                             <div class="columns item-footer is-mobile">
                                 <div class="column total">Итого:</div>
                                 <div class="column price">4 500Р</div>
@@ -113,50 +137,47 @@
                         <div class="rectangle" style="background: rgba(33, 205, 135, 0.4);"></div>
                         <div class="product-card-header">
                             <div class="dot"></div>
-                            <div class="product-card-header-title">Частичный протез</div>
+                            <div class="product-card-header-title">Другие частичные протезы</div>
                         </div>
                         <div class="product-card-body">
                             <div class="columns table-header is-mobile">
                                 <div class="column"></div>
-                                <div class="column table-header-text"><span>1 шт.</span></div>
-                                <div class="column table-header-text"><span>2 шт.</span></div>
+                                <div class="column table-header-text"><span>«Нейлон»</span></div>
+                                <div class="column table-header-text"><span>«Акри ФРИ»</span></div>
                             </div>
                             <div class="columns item is-mobile">
                                 <div class="column">Осмотр</div>
                                 <div class="column price">100Р</div>
-                                <div class="column price">4 000Р</div>
+                                <div class="column price">100Р</div>
                             </div>
                             <div class="columns item is-mobile">
                                 <div class="column">Протез</div>
-                                <div class="column price">4 000Р</div>
-                                <div class="column price">4 000Р</div>
-                            </div>
-                            <div class="columns item is-mobile">
-                                <div class="column">2 кламера</div>
-                                <div class="column price">200Р</div>
-                                <div class="column price">400Р</div>
+                                <div class="column price">15 000Р</div>
+                                <div class="column price">12 500Р</div>
                             </div>
                             <div class="columns item is-mobile">
                                 <div class="column">2 слепка</div>
                                 <div class="column price">200Р</div>
                                 <div class="column price">200Р</div>
                             </div>
+                        </div>
+                        <div class="product-card-price">
                             <div class="columns item-footer is-mobile">
                                 <div class="column total">Итого:</div>
-                                <div class="column price">4 500Р</div>
-                                <div class="column price">8 700Р</div>
+                                <div class="column price">15 300Р</div>
+                                <div class="column price">12 800Р</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="columns s-row">
-                <div class="column">
+                <div class="column mb-md-5">
                     <div class="product-card">
                         <div class="rectangle" style="background: #21CD87;"></div>
                         <div class="product-card-header">
                             <div class="dot" style="background: #21CD87;"></div>
-                            <div class="product-card-header-title">Частичный протез</div>
+                            <div class="product-card-header-title">Полный протез</div>
                         </div>
                         <div class="product-card-body">
                             <div class="columns table-header is-mobile">
@@ -167,27 +188,24 @@
                             <div class="columns item is-mobile">
                                 <div class="column">Осмотр</div>
                                 <div class="column price">100Р</div>
-                                <div class="column price">4 000Р</div>
+                                <div class="column price">100Р</div>
                             </div>
                             <div class="columns item is-mobile">
                                 <div class="column">Протез</div>
-                                <div class="column price">4 000Р</div>
-                                <div class="column price">4 000Р</div>
-                            </div>
-                            <div class="columns item is-mobile">
-                                <div class="column">2 кламера</div>
-                                <div class="column price">200Р</div>
-                                <div class="column price">400Р</div>
+                                <div class="column price">4 500Р</div>
+                                <div class="column price">9 000Р</div>
                             </div>
                             <div class="columns item is-mobile">
                                 <div class="column">2 слепка</div>
                                 <div class="column price">200Р</div>
                                 <div class="column price">200Р</div>
                             </div>
+                        </div>
+                        <div class="product-card-price">
                             <div class="columns item-footer is-mobile">
                                 <div class="column total">Итого:</div>
-                                <div class="column price">4 500Р</div>
-                                <div class="column price">8 700Р</div>
+                                <div class="column price">4 800Р</div>
+                                <div class="column price">9 300Р</div>
                             </div>
                         </div>
                     </div>
@@ -198,7 +216,7 @@
                         <div class="rectangle" style="background: #62E4F4;"></div>
                         <div class="product-card-header">
                             <div class="dot" style="background: #62E4F4;"></div>
-                            <div class="product-card-header-title">Частичный протез</div>
+                            <div class="product-card-header-title">Протез «Акрилик»</div>
                         </div>
                         <div class="product-card-body">
                             <div class="columns table-header is-mobile">
@@ -209,27 +227,24 @@
                             <div class="columns item is-mobile">
                                 <div class="column">Осмотр</div>
                                 <div class="column price">100Р</div>
-                                <div class="column price">4 000Р</div>
+                                <div class="column price">100Р</div>
                             </div>
                             <div class="columns item is-mobile">
                                 <div class="column">Протез</div>
-                                <div class="column price">4 000Р</div>
-                                <div class="column price">4 000Р</div>
-                            </div>
-                            <div class="columns item is-mobile">
-                                <div class="column">2 кламера</div>
-                                <div class="column price">200Р</div>
-                                <div class="column price">400Р</div>
+                                <div class="column price">15 500Р</div>
+                                <div class="column price">30 000Р</div>
                             </div>
                             <div class="columns item is-mobile">
                                 <div class="column">2 слепка</div>
                                 <div class="column price">200Р</div>
                                 <div class="column price">200Р</div>
                             </div>
+                        </div>
+                        <div class="product-card-price">
                             <div class="columns item-footer is-mobile">
                                 <div class="column total">Итого:</div>
-                                <div class="column price">4 500Р</div>
-                                <div class="column price">8 700Р</div>
+                                <div class="column price">15 800Р</div>
+                                <div class="column price">30 300Р</div>
                             </div>
                         </div>
                     </div>
@@ -238,7 +253,7 @@
         </div>
     </div>
 </section>
-<section class="section pb-100 pt-0 full-spectre">
+<section class="section pb-100 pt-0 full-spectre" id="services">
     <div class="container">
         <div class="section-header">
             <div class="section-header-text">
@@ -254,78 +269,128 @@
                 <div class="column">
                     <div class="columns is-mobile">
                         <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка стальная</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column price is-3">1 100Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка восстановительная</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка восстановительная
+                        </div>
+                        <div class="column price is-3">1 200Р</div>
                     </div>
                     <div class="columns is-mobile">
                         <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Литой зуб</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column price is-3">1 000Р</div>
                     </div>
                     <div class="columns is-mobile">
                         <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Фасетка</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column price is-3">1 300Р</div>
                     </div>
                     <div class="columns is-mobile">
                         <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка с облицовкой</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column price is-3">2 300Р</div>
                     </div>
                     <div class="columns is-mobile">
                         <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка пластмассовая</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column price is-3">1 150Р</div>
                     </div>
                     <div class="columns is-mobile">
                         <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Бюгельная коронка</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column price is-3">1 300Р</div>
                     </div>
                     <div class="columns is-mobile">
                         <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Литой штифт</div>
+                        <div class="column price is-3">1 200Р</div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Полный съемный протез</div>
+                        <div class="column price is-3">7 100Р</div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Частичный съемный протез</div>
+                        <div class="column price is-3">6 290Р</div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Кламер</div>
+                        <div class="column price is-3">180Р</div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Лапка, накладка</div>
+                        <div class="column price is-3">260Р</div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Спайка коронок</div>
+                        <div class="column price is-3">350Р</div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Снятие коронок</div>
                         <div class="column price is-3">200Р</div>
                     </div>
 
                 </div>
                 <div class="column">
                     <div class="columns is-mobile">
-                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка стальная</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Снятие слепка из массы</div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка восстановительная</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Цементирование коронки
+                        </div>
                         <div class="column price is-3">200Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Литой зуб</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Бюгельный протез</div>
+                        <div class="column price is-3">11 800Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Фасетка</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Металлокерамика</div>
+                        <div class="column price is-3">5 500Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile is-offset-2-tablet">Коронка с облицовкой</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile is-offset-2-tablet">Осмотр
+                        </div>
+                        <div class="column price is-3">180Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Коронка пластмассовая</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Перелом базиса</div>
+                        <div class="column price is-3">500Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Бюгельная коронка</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Два перелома базиса</div>
+                        <div class="column price is-3">700Р</div>
                     </div>
                     <div class="columns is-mobile">
-                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Литой штифт</div>
-                        <div class="column price is-3">200Р</div>
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Приварка 1 кламера</div>
+                        <div class="column price is-3">580Р</div>
                     </div>
-
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Приварка 2-х кламеров</div>
+                        <div class="column price is-3">720Р</div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Приварка 1 зуба</div>
+                        <div class="column price is-3">790Р</div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">+1 за каждый зуб</div>
+                        <div class="column price is-3">180Р</div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Перебазировка протеза</div>
+                        <div class="column price is-3">3 000Р</div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Индивидуальная ложка</div>
+                        <div class="column price is-3">860Р</div>
+                    </div>
+                    <div class="columns is-mobile">
+                        <div class="column name is-7-tablet is-offset-2-tablet is-9-mobile">Цельная литая коронка</div>
+                        <div class="column price is-3">2 860Р</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="section pb-100 pt-0 full-spectre">
+<section class="section pb-100 pt-0 full-spectre" id="contacts">
     <div class="container">
         <div class="columns">
             <div class="column is-flex" style="flex-direction: column">
@@ -353,9 +418,9 @@
                         <div class="contacts-item-name">
                             Телефон
                         </div>
-                        <div class="contacts-item-value">
-                            +7 4228 355 55 84
-                        </div>
+                        <a class="contacts-item-value" href="tel:+78422968869">
+                            +7 (842) 296 88 69
+                        </a>
                     </div>
                     <div class="contacts-item">
                         <div class="contacts-item-name">
@@ -393,7 +458,7 @@
                         <span>ДЕНТА</span>
                     </div>
                     <div class="footer-info">
-                        <div class="footer-company-name">ООО Медицинский Цетр “Дента”</div>
+                        <div class="footer-company-name">ООО Медицинский Цетр «Дента»</div>
                         <div class="credits d-flex" style="flex-direction: column">
                             <div>ИНН 7334535353</div>
                             <div>КПП 284724368</div>
@@ -405,17 +470,17 @@
             </div>
             <div class="column is-one-third">
                 <div class="is-flex" style="flex-direction: column">
-                    <div class="footer-link">Главная</div>
-                    <div class="footer-link">Готовые решения</div>
-                    <div class="footer-link">Услуги</div>
-                    <div class="footer-link">Контакты</div>
+                    <a href="#main" class="footer-link">Главная</a>
+                    <a href="#solutions" class="footer-link">Готовые решения</a>
+                    <a href="#services" class="footer-link">Услуги</a>
+                    <a href="#contacts" class="footer-link">Контакты</a>
                 </div>
             </div>
             <div class="column is-one-third">
                 <div class="is-flex" style="flex-direction: column;">
                     <div class="footer-contact">
                         <div class="footer-contact-name">Телефон</div>
-                        <div class="footer-contact-value">+7 4228 355 55 84</div>
+                        <a class="footer-contact-value" href="tel:+78422968869">+7 (842) 296 88 69</a>
                     </div>
                     <div class="footer-contact">
                         <div class="footer-contact-name">Адрес</div>
@@ -428,5 +493,32 @@
         </div>
     </div>
 </footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('a').on('click', function (event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top
+                    },
+                    768
+                );
+            }
+        })
+        $('#burger').on('click',function (event) {
+            let menu = $('#menu')[0];
+            if(menu.classList.contains('is-active')){
+                menu.classList.remove('is-active')
+                event.target.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+                event.target.classList.add('is-active');
+            }
+        })
+    });
+</script>
 </body>
 </html>

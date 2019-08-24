@@ -81,7 +81,7 @@ a.navbar-item {
 .hero-image {
     position: absolute; 
     top: 0;
-    right: 0; 
+    left: 55%; 
     overflow: visible
 }
 
@@ -125,6 +125,12 @@ a.navbar-item {
     color: white;
     width: 234px;
     height: 54px;
+    transition: 0.2s ease-in;
+}
+
+.hero-button:hover {
+    color: white;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.15);
 }
 
 .m-auto {
@@ -169,13 +175,15 @@ a.navbar-item {
 
 .product-card-header {
     margin-bottom: 32px;
-    display: inline-flex;
+    display:flex;
+    justify-content: flex-start;
+    margin-right: auto;
 }
 
 .product-card {
     background: #FFFFFF;
     box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
-    padding: 24px 85px 30px 32px;
+    padding: 24px 40px 30px 32px;
     position: relative;
 }
 
@@ -212,12 +220,26 @@ a.navbar-item {
 .product-card .table-header-text span {
     border-bottom: 1px solid #E7E7E7;
 }
-
-.product-card-body .item-footer {
-    margin-top: 32px
+.product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.product-card-body .item-footer .price {
+.product-card-body {
+    margin-bottom: 32px;
+}
+
+.product-card-body .item-footer {
+    margin-top: 32px;
+}
+
+.product-card-price {
+    margin-top: auto;
+}
+
+
+.product-card-price .item-footer .price {
     font-family: Rubik;
     font-style: normal;
     font-weight: bold;
@@ -227,7 +249,7 @@ a.navbar-item {
     color: #213356;
 }
 
-.product-card-body .item-footer .total {
+.product-card-price .item-footer .total {
     font-family: Rubik;
     font-style: normal;
     font-weight: bold;
@@ -351,6 +373,9 @@ a.navbar-item {
 
     color: #67718A;
 }
+a:hover {
+    color: #21CD87;
+}
 
 .contacts-side-text-big {
     font-family: Rubik;
@@ -434,4 +459,10 @@ a.navbar-item {
     font-size: 14px;
     line-height: 140%;
     color: #67718A;
+}
+
+@media(max-width: 763px) {
+    .mb-md-5 {
+        margin-bottom: 3em;
+    }
 }
